@@ -1,0 +1,51 @@
+4️⃣ Python Operator Precedence Cheat Sheet (High → Low)
+()                      Parentheses
+**                      Exponentiation
++x  -x  ~x              Unary operators
+*  /  //  %             Multiplication, Division
++  -                    Addition, Subtraction
+<<  >>                  Bitwise shift
+&                       Bitwise AND
+^                       Bitwise XOR
+|                       Bitwise OR
+==  !=  >  <  >=  <=    Comparisons
+is  is not              Identity
+in  not in               Membership
+not                     Logical NOT
+and                     Logical AND
+or                      Logical OR
+
+5️⃣ Associativity Cheat Sheet
+Operator	Associativity
+**	Right to Left
+=	Right to Left
+All others	Left to Right
+6️⃣ Important Mixed Examples
+Arithmetic
+print(10 + 20 * 3)     # 70
+print((10 + 20) * 3)   # 90
+
+Logical Operators
+print(True or False and False)
+
+
+Output: True
+
+Why?
+and has higher precedence than or
+
+→ True or (False and False)
+→ True or False → True
+
+Comparison + Logical
+x = 5
+print(x > 3 and x < 10)
+
+
+Output: True
+
+Membership + Logical
+print(3 in [1,2,3] and 5 > 2)
+
+
+Output: True
